@@ -1,0 +1,62 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+{% block content%}
+
+<div class="col-12">
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <div class="col-6">
+                    {% if object.author == user %}
+                    <a class="btn btn-outline-primary" href="{% url 'blog:edit' object.pk %}">Изменить</a>
+                    <a class="btn btn-outline-danger"
+                       href="{% url 'blog:delete' object.pk %}">Удалить</a>
+                    {% if object.is_published %}
+                    <a class="btn btn-outline-warning" href="{% url 'blog:toogle_activity' object.pk %}">Снять с
+                        публикации</a>
+                    {% else %}
+                    <a class="btn btn-success" href="{% url 'blog:toogle_activity' object.pk %}">Опубликовать</a>
+                    {% endif%}
+                    {% if object.is_subscribed %}
+                    <p> Статья опубликована по платной подписке </p>
+                    {% else %}
+                    <p> Статья опубликована по бесплатной подписке </p>
+                    {% endif%}
+                </div>
+                <div class="col-6">
+
+
+                    {% endif %}
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            {{object}}
+
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                            <p> Категория: {{object.category}}</p>
+
+
+                            <p> {{object.body}}</p>
+                            <p></p>
+                            <p> Дата создания: {{object.date_of_creation}}</p>
+                            <p> Автор: {{object.author.nickname|default:"не указан"}}</p>
+
+                            <img class="card-img-top"
+                                 src="/media/{{object.preview}}"
+                                 alt="Card image cap">
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card-footer"></div>
+                Просмотры: {{ object.views_count }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

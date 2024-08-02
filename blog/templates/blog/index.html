@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<div class="jumbotron">
+    <h2>Статистика сервиса</h2>
+
+    <p class="lead">Количество публикаций: {{publish_blog_count}}</p>
+    <p class="lead">Количество пользователей: {{users_count}}</p>
+
+</div>
+
+<div class="row">
+    {% for object in object_list %}
+    {% include 'blog/includes/inc_blog.html' with object=object %}
+    {% endfor %}
+</div>
+
+{% endblock %}

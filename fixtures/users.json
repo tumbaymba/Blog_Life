@@ -1,0 +1,46 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "Rhts1428_1",
+      "last_login": "2024-08-01T19:00:00.102Z",
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "SkyPro",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-08-01T13:00:00.702Z",
+      "phone": "79373385333",
+      "email": "admin@sky.pro",
+      "avatar": "",
+      "country": null,
+      "nickname": "Dmitry",
+      "is_subscribed": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "Rhts1428_2",
+      "last_login": "2024-08-01T19:00:00.998Z",
+      "is_superuser": false,
+      "first_name": "Тамара",
+      "last_name": "Student",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-08-01T14:00:00.306Z",
+      "phone": "79374801777",
+      "email": "",
+      "avatar": "",
+      "country": null,
+      "nickname": "Beautiful",
+      "is_subscribed": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

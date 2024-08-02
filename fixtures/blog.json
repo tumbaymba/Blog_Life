@@ -1,0 +1,116 @@
+[
+  {
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+      "title": "Идеи, для удаленной работы из дома (создание офиса)",
+      "body": "Декорирование балкона, обустройство рабочего пространства .\r\nШирма для зонирования\r\nЛибо установка полноценной пластиковой двери\r\nПисьменный стол + кресло\r\nПолки для документов\r\n",
+      "preview": "blogs/Office.jpeg",
+      "date_of_creation": "2024-08-01",
+      "is_published": true,
+      "views_count": 3,
+      "category": 6,
+      "author": 1,
+      "is_subscribed": false
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+      "title": "Чем может удивить Москва",
+      "body": "Краткое описание\r\n",
+      "preview": "blogs/Moscow_city.jpg",
+      "date_of_creation": "2024-08-01",
+      "is_published": true,
+      "views_count": 2,
+      "category": 3,
+      "author": 1,
+      "is_subscribed": false
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+      "title": "Автопром поднебесной",
+      "body": "В настоящее время функционируют 437 автозаводов, это почти в четыре раза больше, чем в ЕС (80) и Британии (36) вместе взятых.",
+      "preview": "blogs/Avatr.jpg",
+      "date_of_creation": "2024-08-01",
+      "is_published": true,
+      "views_count": 4,
+      "category": 4,
+      "author": 1,
+      "is_subscribed": false
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+      "title": "Обучение удаленно с помощью Sky.pro",
+      "body": "Необходимо пройти по ссылке sky.pro.\r\n",
+      "preview": "blogs/Skypro.jpg",
+      "date_of_creation": "2024-08-01",
+      "is_published": true,
+      "views_count": 2,
+      "category": 8,
+      "author": 1,
+      "is_subscribed": true
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+      "title": "Что такое кроссфит",
+      "body": "Кроссфит — это вид спорта и система физической подготовки, комплекс из аэробной и анаэробной \r\n нагрузки, включающий интервальные тренировки с собственным весом, элементы из тяжелой атлетики, \r\n гимнастики, гиревого спорта, плиометрики и силового экстрима.",
+      "preview": "blogs/Crossfit.jpg",
+      "date_of_creation": "2024-08-01",
+      "is_published": true,
+      "views_count": 2,
+      "category": 1,
+      "author": 2,
+      "is_subscribed": false
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 1,
+    "fields": {
+      "title": "Спорт"
+    }
+  },
+
+  {
+    "model": "blog.category",
+    "pk": 3,
+    "fields": {
+      "title": "Туризм"
+    }
+  },
+
+  {
+    "model": "blog.category",
+    "pk": 6,
+    "fields": {
+      "title": "Дизайн"
+    }
+  },
+
+  {
+    "model": "blog.category",
+    "pk": 8,
+    "fields": {
+      "title": "Дополнительное образование в сфере IT"
+    }
+  },
+
+  {
+    "model": "blog.category",
+    "pk": 4,
+    "fields": {
+      "title": "Китайские авто"
+    }
+  }
+]
